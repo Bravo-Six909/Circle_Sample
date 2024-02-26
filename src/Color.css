@@ -1,0 +1,36 @@
+.palette-container {
+    position: relative;
+    display: inline-block;
+}
+
+.palette-button {
+    border: none;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    background: transparent;
+}
+
+.palette-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: linear-gradient(45deg, #060606 0%,#4f4d50 0%, #a2a2a4 100%, white);
+    padding: 5px;
+}
+
+.palette-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+}
+
+.palette-color {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.icon{
+    height: 1.5rem;
+    width: 1.5rem;
+}

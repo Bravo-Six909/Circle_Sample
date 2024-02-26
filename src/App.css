@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
+/* body styling*/
+.parent-body{
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(45deg, #060606 0%,#4f4d50 0%, #a2a2a4 100%, white);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.main-sec-body{
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  font-size: large;
+}
+
+/* Main section styling */
+
+.main-sec{
+  height: 90vh;
+  width: 40vw;
+  background: linear-gradient(45deg, #9600ff 0%,#9220e3 0%, #aebaf8 100%, white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 16px 6px 54px 2px rgba(0,0,0,0.77);
+-moz-box-shadow: 16px 6px 54px 2px rgba(0,0,0,0.77);
+box-shadow: 16px 6px 54px 2px rgba(0,0,0,0.77);
+}
+
+@media only screen and (max-width: 600px) {
+  .main-sec{
+    width: 60vw;
+  }
+}
+
+
+/* p-block and f-block styling */
+
+.p-block{
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.f-block{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.label{
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+#pSlider::-webkit-slider-thumb, #fSlider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #f2f1f4;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+#pSlider, #fSlider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%; 
+  height: 10px; 
+  background: #d5d3d3; 
+  opacity: 0.7; 
+  border-radius: 20px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#pSlider:hover, #fSlider:hover {
+  opacity: 1;
+}
+
+.slider-val{
+  margin-top: 5px;
+}
+
+/* Draw button styling */
+
+.draw-btn{
+  border: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 30px;
+  color: #9600ff;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.draw-btn:hover{
+  background-color: #dbc3eb;
+  transition-duration: 1s;
+  -webkit-box-shadow: 0px 31px 66px -19px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 31px 66px -19px rgba(0,0,0,0.75);
+box-shadow: 0px 31px 66px -19px rgba(0,0,0,0.75);
 }
