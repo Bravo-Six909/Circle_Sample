@@ -8,6 +8,7 @@ This is the entry point of the React JS application. All components will be rend
 
 The color palette is defined in `Color.js`. The color palette contains 9 different colors. When users select any color from it, it will render that color to all the components.
 
+![Color Palette Image](./public/Project%20Image/Color%20Palette.png)
 
 ### App.js
 
@@ -17,6 +18,8 @@ In `App.js`, the entire body is defined. Here, we have defined:
 3. Adjusting the f value (Fraction value).
 
 According to the p and f value, the circle will be drawn.
+
+![Body Image](./public/Project%20Image/Body.png)
 
 
 ## Getting Started with Create React App
